@@ -1,0 +1,59 @@
+{
+    "home": [
+        {
+            "toast": "Le PDF a été téléchargé.",
+            "title": "Générateur de PDF",
+            "subtitle": "Téléchargez un message et une image pour générer votre fichier PDF.",
+            "start": "Commencer"
+        }
+    ],
+    "loader": [
+        {
+            "load": "Chargement..."
+        }
+    ],
+    "previewButton": [
+        {
+            "hide": "Cacher",
+            "show": "Aperçu"
+        }
+    ],
+    "preview": [
+        {
+            "opt_one": "Option Un",
+            "opt_two": "Option Deux",
+            "title": "Sélectionnez une image",
+            "button": "Soumettre"
+        }
+    ],
+    "textarea": [
+        {
+            "characters": "caractères restants",
+            "allowed": "Plus de caractères autorisés",
+            "placeholder": "Le texte va ici...",
+            "label": "1) Ajoutez votre texte"
+        }
+    ],
+    "imagemessage": [
+        {
+            "toastone": "Veuillez sélectionner un seul fichier.",
+            "toasttwo": "Erreur de chargement de l'image. Veuillez réessayer.",
+            "title": "2) sélectionnez votre image",
+            "label": "choisir le fichier"
+        }
+    ],
+    "navigation": [
+        {
+            "en": "Anglais",
+            "fr": "Français"
+        }
+    ],
+    "confirmation": [
+        {
+            "title": "Votre PDF a été téléchargé",
+            "paragraph": "Merci d'utiliser Mesplaques. Voulez-vous réessayer?",
+            "again": "Réessayer",
+            "visit": "Visiter Mesplaques"
+        }
+    ]
+}

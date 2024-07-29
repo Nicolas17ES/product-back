@@ -1,0 +1,59 @@
+{
+    "home": [
+        {
+            "toast": "PDF has been downloaded.",
+            "title": "PDF Generator",
+            "subtitle": "Upload a message and an image to generate your PDF file.",
+            "start": "Get started"
+        }
+    ],
+    "loader": [
+        {
+            "load": "Loading..."
+        }
+    ],
+    "previewButton": [
+        {
+            "hide": "Hide",
+            "show": "Preview"        
+        }
+    ],
+    "preview": [
+        {
+            "opt_one": "Option One",
+            "opt_two": "Option Two",
+            "title": "Select an image",
+            "button": "Submit"
+        }
+    ],
+    "textarea": [
+        {
+            "characters": "characters left",
+            "allowed": "No more characters allowed",
+            "placeholder": "Text goes here...",
+            "label": "1) Add your text"
+        }
+    ],
+    "imagemessage": [
+        {
+            "toastone": "Please select only one file.",
+            "toasttwo": "Error loading image. Please try again.",
+            "title": "2) select your image",
+            "label": "choose file"
+        }
+    ],
+    "navigation": [
+        {
+            "en": "English",
+            "fr": "French"
+        }
+    ],
+    "confirmation": [
+        {
+            "title": "Your PDF has been downloaded",
+            "paragraph": "Thank you for using Mesplaques. Would you like to try again?",
+            "again": "Try again",
+            "visit": "Visit Mesplaques"
+        }
+    ]
+}
