@@ -12,7 +12,7 @@ import { toast } from 'react-toastify'; // Import toast for displaying notificat
  */
 export const uploadImage = async (dispatch, formData) => {
     dispatch({ type: 'SET_LOADING_MESSAGE', payload: 'Generating PDF...' }); 
-    
+
     // Extract the file name from FormData and remove any image file extension
     const fileNameWithExtension = formData.get('name') || 'generated'; // Default to 'generated' if no name is provided
     const fileName = fileNameWithExtension.replace(/\.(jpg|jpeg|png)$/i, ''); // Remove image file extensions (jpg, jpeg, png)
@@ -28,6 +28,7 @@ export const uploadImage = async (dispatch, formData) => {
         if (!response.ok) {
             // Attempt to read the response body as JSON
             const errorResponse = await response.json();
+            console.log(errorResponse)
             const errorMessage = errorResponse.error || 'An unknown error occurred'; // Default error message
             toast.error(`Error: ${errorMessage}`); // Display error notification
             throw new Error(`HTTP error! status: ${response.status} - ${errorMessage}`); // Throw an error with status and message
