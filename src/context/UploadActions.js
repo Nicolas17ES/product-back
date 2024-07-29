@@ -28,9 +28,10 @@ export const uploadImage = async (dispatch, formData) => {
         if (!response.ok) {
             // Attempt to read the response body as JSON
             const errorResponse = await response.json();
-            console.log(errorResponse)
             const errorMessage = errorResponse.error || 'An unknown error occurred'; // Default error message
             toast.error(`Error: ${errorMessage}`); // Display error notification
+            dispatch({ type: 'SET_LOADING_MESSAGE', payload: '' });
+            dispatch({ type: 'SET_IS_LOADING', payload: false });
             throw new Error(`HTTP error! status: ${response.status} - ${errorMessage}`); // Throw an error with status and message
         }
 

@@ -72,7 +72,7 @@ describe('uploadImage function', () => {
         await uploadImage(dispatch, formData);
 
         // Verify that fetch was called with the correct URL and options
-        expect(fetch).toHaveBeenCalledWith("/pdf/generate", {
+        expect(fetch).toHaveBeenCalledWith("https://product-backend-production-5471.up.railway.app/pdf/generate", {
             method: "POST",
             body: formData,
         });
@@ -118,9 +118,11 @@ describe('uploadImage function', () => {
         // Verify that dispatch was called with the initial loading message
         expect(dispatch).toHaveBeenCalledWith({ type: 'SET_LOADING_MESSAGE', payload: 'Generating PDF...' });
 
+        // Verify that dispatch was called with the actions for error handling
+        expect(dispatch).toHaveBeenCalledWith({ type: 'SET_LOADING_MESSAGE', payload: '' });
+        expect(dispatch).toHaveBeenCalledWith({ type: 'SET_IS_LOADING', payload: false });
+
         // Verify that dispatch was not called with other actions
-        expect(dispatch).not.toHaveBeenCalledWith({ type: 'SET_IS_LOADING', payload: false });
         expect(dispatch).not.toHaveBeenCalledWith({ type: 'SET_IS_PDF_READY', payload: true });
-        expect(dispatch).not.toHaveBeenCalledWith({ type: 'SET_LOADING_MESSAGE', payload: '' });
     });
 });
