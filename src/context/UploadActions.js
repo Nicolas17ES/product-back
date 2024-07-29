@@ -18,7 +18,7 @@ export const uploadImage = async (dispatch, formData) => {
 
     try {
         // Send a POST request to upload the image and generate a PDF
-        const response = await fetch("/pdf/generate", {
+        const response = await fetch("https://product-backend-production-5471.up.railway.app/pdf/generate", {
             method: "POST", // HTTP method for the request
             body: formData, // The FormData object containing the image
         });
