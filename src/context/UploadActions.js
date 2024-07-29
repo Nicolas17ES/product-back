@@ -12,6 +12,7 @@ import { toast } from 'react-toastify'; // Import toast for displaying notificat
  */
 export const uploadImage = async (dispatch, formData) => {
     dispatch({ type: 'SET_LOADING_MESSAGE', payload: 'Generating PDF...' }); 
+    
     // Extract the file name from FormData and remove any image file extension
     const fileNameWithExtension = formData.get('name') || 'generated'; // Default to 'generated' if no name is provided
     const fileName = fileNameWithExtension.replace(/\.(jpg|jpeg|png)$/i, ''); // Remove image file extensions (jpg, jpeg, png)

@@ -10,7 +10,6 @@ import useLanguageFile from '../../hooks/useLanguageFile';
  * @returns {JSX.Element|null} The rendered button element or null if content is not loaded.
  */
 
-
 const PreviewButton = () => {
 
     const { dispatch, showPreview, displaySpinner } = useContext(UploadContext);
